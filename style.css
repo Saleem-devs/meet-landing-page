@@ -247,10 +247,12 @@ footer {
     .btnGroup {
         display: flex;
         flex-direction: column;
-        marging-bottom: 1.6rem;
         justify-content: center;
         align-items: center;
     }
+    
+    .btnGroup button {
+        marging-bottom: 1.6rem;
 
     .imgLeft {
         margin-bottom: 4rem;
