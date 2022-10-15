@@ -197,7 +197,7 @@ footer {
 
 /*------------------------Media Query-----------------------*/
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1030px) {
     .hero {
         flex-direction: column;
     }
@@ -240,7 +240,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
     header {
         margin-bottom: 4rem;
     }
