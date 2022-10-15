@@ -247,7 +247,7 @@ footer {
     .btnGroup {
         display: flex;
         flex-direction: column;
-        gap: 1.6rem;
+        marging-bottom: 1.6rem;
         justify-content: center;
         align-items: center;
     }
