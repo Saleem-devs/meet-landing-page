@@ -1,0 +1,280 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "My font";
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 1.5rem 3rem;
+    border-radius: 3rem;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: "My font";
+    src: url(./font/RedHatDisplay-Regular.ttf);
+}
+@font-face {
+    font-family: "My font bold";
+    src: url(./font/RedHatDisplay-Bold.ttf);
+}
+
+html {
+    font-size: 10px;
+    text-decoration: none;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+
+.logo {
+    padding-top: 4rem;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgRight, .imgLeft {
+    width: 30rem;
+}
+
+.imgRight img, .imgLeft img {
+    width: 100%;
+}
+.textCenter {
+    text-align: center;
+}
+.textCenter h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+    font-weight: 900;
+    font-family: "My font bold";
+    margin-bottom: 3rem;
+}
+
+.textCenter p {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    color: #87879D;
+    margin-bottom: 3rem;
+}
+
+.btnGroup button {
+    margin-right: 1.6rem;
+}
+
+.btnLeft {
+    background: #4d96a9;
+}
+
+.btnLeft:hover {
+    background: #71c0d4;
+}
+
+.btnLeft span {
+    color: #8fe3f9;
+    margin-left: 1rem;
+}
+
+.btnRight {
+    background: #855fb1;
+}
+
+.btnRight:hover {
+    background: #b18bdd;
+}
+
+.heroPeople {
+    margin-top: 25rem;
+}
+
+.people {
+    display: flex;
+    justify-content: space-between;
+}
+
+.peopleImg {
+    flex-basis: 20%;
+    width: 25.5rem;
+}
+
+.peopleImg img {
+    width: 100%;
+    border-radius: 10%;
+}
+
+article {
+    margin-top: 8rem;
+    margin-bottom: 18rem;
+}
+
+.box {
+    text-align: center;
+}
+
+.box h4 {
+    color: #4D96A9;
+    font-size: 1.6rem;
+    letter-spacing: .4rem;
+    text-transform: uppercase;
+    font-family: "My font bold";
+    margin-bottom: 1.6rem;
+}
+.box h3 {
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: "My font bold";
+    line-height: 4.4rem;
+    color: #28283D;
+    margin-bottom: 3rem;
+}
+
+.box p {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    font-weight: 500;
+    color: #87879D;
+}
+
+footer {
+    padding: 10rem 0 10rem 0;
+    background: linear-gradient(0deg, rgba(70, 150, 168, 0.8), rgba(70, 150, 168, 0.8)), url(./Images/image-footer.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.foot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row3 h3 {
+    font-size: 4rem;
+    line-height: 4.4rem;
+    color: #fafafa;
+    font-weight: 900;
+    font-family: "My font bold";
+}
+
+
+.row3 p {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    color: #fafafa;
+}
+
+.row3 button {
+    background: #855fb1;
+}
+
+.row3 button:hover {
+    background: #b18bdd;
+}
+
+.row3 button span {
+    color: #D9B8FF;
+    margin-left: 1rem;
+}
+
+
+/*------------------------Media Query-----------------------*/
+
+@media screen and (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+    }
+    .imgRight {
+        display: none;
+    }
+    .imgLeft {
+        background: url(./Images/image-hero.png) no-repeat;
+        width: 100%;
+        height: 30rem;
+        background-position: center;
+        background-size: contain;
+        margin-bottom: 7rem;
+    }
+    .imgLeft img {
+        visibility: hidden;
+    }
+    .textCenter {
+        flex-basis: 100%;
+    }
+    .textCenter h1 {
+        font-size: 4.8rem;
+        line-height: 4.8rem;
+    }
+    .textCenter p {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+    .btnGroup {
+        text-align: center;
+    }
+    .box p {
+        font-size: 1.6rem;
+    }
+
+    .foot {
+        flex-direction: column;
+        gap: 3rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        margin-bottom: 4rem;
+    }
+    .btnGroup {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgLeft {
+        margin-bottom: 4rem;
+    }
+
+    .heroPeople {
+        margin-top: 15rem;
+    }
+    .people {
+        flex-wrap: wrap;
+    }
+
+    article {
+        margin-bottom: 8rem;
+    }
+
+    .peopleImg {
+        flex-basis: 47%;
+        margin-bottom: 2rem;
+    }
+
+    .box h3, .row h3 {
+        font-size: 3.2rem;
+        line-height: 3.6rem;
+    }
+    
+}
