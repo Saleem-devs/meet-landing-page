@@ -37,7 +37,7 @@ Users should be able to:
 
 ## My process
 
-I started with writing the HTML codes for each part of the webpage, I have 5 parts (Header, Section, Section, Article, and Footer). I write the HTML codes for each part and also write the CSS code for that part before moving onto the next part. I did all these on desktop-first responsive design. After building the desktop screen, I built the Tablet screen (max-width: 900px), after that, I built the mobile screen (max-width: 600px).
+I started with writing the HTML codes for each part of the webpage, I have 5 parts (Header, Section, Section, Article, and Footer). I write the HTML codes for each part and also write the CSS code for that part before moving onto the next part. I did all these on desktop-first responsive design. After building the desktop screen, I built the Tablet screen (max-width: 1030px), after that, I built the mobile screen (max-width: 750px).
 
 ### Built with
 
