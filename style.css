@@ -245,7 +245,9 @@ footer {
         display: flex;
         align-items: center;
         flex-direction: column;
-        gap: 2rem;
+    }
+    .btnGroup button {
+        margin-bottom: 2rem;
     }
     .box h3, .row h3 {
         font-size: 3.2rem;
